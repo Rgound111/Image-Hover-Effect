@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+ 
+}
+
+.overlay{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: aqua;
+    opacity: 0;
+}
+.container:hover .overlay{
+   opacity: 1;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.overlayleft{
+    height: 100%;
+    width: 0%;
+    left: 0%;
+    top: 0%;
+    transition: all .3s ease;
+    background-color: rgb(195, 246, 246);
+}
+.overlayright{
+    height: 100%;
+    width: 0%;
+    right: 0%;
+    top: 0%;
+    transition: all .3s ease;
+    background-color: rgb(195, 246, 246);
+}
+
+.container:hover .overlayleft  {
+    width: 100%;
+}
+.container:hover .overlayright{
+    width: 100%;   
+}
+
+.overlaytop{
+    height: 0%;
+    width: 100%;
+    right: 0%;
+    top: 0%;
+    transition: all .3s ease;
+    background-color: rgb(195, 246, 246);
+}
+
+.overlaybottom{
+    height: 0%;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    transition: all .3s ease;
+    background-color: rgb(195, 246, 246);
+}
+.container:hover .overlaytop{
+    height: 100%;
+}
+.container:hover .overlaybottom{
+    height: 100%;
+}
+
+.overlaycross{
+    height: 0%;
+    width: 0%;
+    left: 0%;
+    top: 0%;
+    transition: all .3s ease;
+    background-color: rgb(195, 246, 246);
+}
+.container:hover .overlaycross{
+    height: 100%;
+    width: 100%;
+}
+
+.overlayfade{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    transition: all .3s ease;
+    background-color: rgb(216, 248, 248);
+}
